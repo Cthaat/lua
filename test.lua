@@ -55,3 +55,28 @@
 --     print(a, b)
 -- end
 
+people = {}
+people.sayhello = function (ins)
+    print ("hello" ..ins.name)
+end
+
+function people.sayhi()
+    print ("hi")
+end
+
+function clone(tab)
+    local ins = {}
+    for key, var in pairs(tab) do
+        ins[key] = var
+    end
+    return ins
+end
+
+people.new = function (nam)
+    local ins = clone(people)
+    ins.name = nam
+    return ins
+end
+
+local p1 = people.new("渚光希")
+p1.sayhello(p1)
