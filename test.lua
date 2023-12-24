@@ -33,3 +33,25 @@
 -- print(config.number)
 -- print(config["word"])
 
+-- config = {a1 = "1" , a2 = "2" , a3 = "3"}
+-- config.a4 = "4"
+-- config["a5"] = "5"
+-- config.a6 = "6"
+-- for k , v in pairs(config) do
+--     print(k,v)
+-- end
+
+-- arr = {1, 2, 3, 2, 1456, 61, 56, 65, 1, 5, 61, 5, 16, 1, 6 , "123" , "渚光希"}
+-- for k, v in pairs(arr) do
+--     print(k, v)
+-- end
+
+-- arr = {}
+-- for var = 1, 100 do
+--     table.insert(arr, 1, var)
+-- end
+
+-- for a, b in pairs(arr) do
+--     print(a, b)
+-- end
+
