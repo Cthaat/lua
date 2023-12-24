@@ -129,6 +129,9 @@ function people(name)
     function ins:sayhello()
         print ("hello" ..self.name)
     end
+    function ins.sayhi(ins)
+        print ("hi" ..ins.name)
+    end
     init()
     return ins
 end
@@ -143,3 +146,4 @@ end
 
 local m = man("渚光希")
 m:sayhello()
+m:sayhi()
