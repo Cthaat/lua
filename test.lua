@@ -55,28 +55,51 @@
 --     print(a, b)
 -- end
 
-people = {}
-people.sayhello = function (ins)
-    print ("hello" ..ins.name)
-end
+-- function copy(dis , tab)
+--     for key , var in pairs(tab) do
+--         dis[key] = var
+--     end
+--     return dis
+-- end
+-- people = {}
+-- people.sayhello = function (ins)
+--     print ("hello" ..ins.name)
+-- end
 
-function people.sayhi()
-    print ("hi")
-end
+-- function people.sayhi()
+--     print ("hi")
+-- end
 
-function clone(tab)
-    local ins = {}
-    for key, var in pairs(tab) do
-        ins[key] = var
-    end
-    return ins
-end
+-- function clone(tab)
+--     local ins = {}
+--     for key, var in pairs(tab) do
+--         ins[key] = var
+--     end
+--     return ins
+-- end
 
-people.new = function (nam)
-    local ins = clone(people)
-    ins.name = nam
-    return ins
-end
+-- people.new = function (nam)
+--     local ins = clone(people)
+--     ins.name = nam
+--     return ins
+-- end
 
-local p1 = people.new("渚光希")
-p1.sayhello(p1)
+-- local p1 = people.new("渚光希")
+-- p1.sayhello(p1)
+-- p1:sayhello()
+
+-- man = {}
+-- man.new = function (name)
+--     local ins = people.new(name)
+--     copy(ins, man)
+--     return ins
+-- end
+
+-- man.sayhi = function ()
+--     print("man hi")
+-- end
+
+-- local m1 = man.new("渚光希")
+-- m1:sayhello()
+-- m1:sayhi()
+
