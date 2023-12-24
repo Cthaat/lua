@@ -103,3 +103,21 @@
 -- m1:sayhello()
 -- m1:sayhi()
 
+-- function people(name)
+--     local ins = {}
+--     local function init()
+--         ins.name = name
+--     end
+
+--     ins.sayhello = function (ins)
+--         print ("hello" ..ins.name)
+--     end
+
+--     init()
+
+--     return ins
+-- end
+
+-- local p = people("渚光希")
+-- p:sayhello()
+
