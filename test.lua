@@ -121,3 +121,25 @@
 -- local p = people("渚光希")
 -- p:sayhello()
 
+function people(name)
+    local ins = {}
+    local function init()
+        ins.name = name
+    end
+    function ins:sayhello()
+        print ("hello" ..self.name)
+    end
+    init()
+    return ins
+end
+
+function man(name)
+    local ins = people(name)
+    ins.sayhello = function ()
+        print("man hi"..ins.name)
+    end
+    return ins
+end
+
+local m = man("渚光希")
+m:sayhello()
