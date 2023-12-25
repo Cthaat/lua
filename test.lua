@@ -121,29 +121,39 @@
 -- local p = people("渚光希")
 -- p:sayhello()
 
-function people(name)
-    local ins = {}
-    local function init()
-        ins.name = name
-    end
-    function ins:sayhello()
-        print ("hello" ..self.name)
-    end
-    function ins.sayhi(ins)
-        print ("hi" ..ins.name)
-    end
-    init()
-    return ins
-end
+-- function people(name)
+--     local ins = {}
+--     local function init()
+--         ins.name = name
+--     end
+--     function ins:sayhello()
+--         print ("hello" ..self.name)
+--     end
+--     function ins.sayhi(ins)
+--         print ("hi" ..ins.name)
+--     end
+--     init()
+--     return ins
+-- end
 
-function man(name)
-    local ins = people(name)
-    ins.sayhello = function ()
-        print("man hi"..ins.name)
-    end
-    return ins
-end
+-- function man(name)
+--     local ins = people(name)
+--     ins.sayhello = function ()
+--         print("man hi"..ins.name)
+--     end
+--     return ins
+-- end
 
-local m = man("渚光希")
-m:sayhello()
-m:sayhi()
+-- local m = man("渚光希")
+-- m:sayhello()
+-- m:sayhi()
+
+-- local label = CCLabelTTF:create("hello", "Courier" , 50)
+-- label:setPosition(ccp(300, 300))
+-- local scene = CCScene:create()
+-- local layer = CCLayer:create()
+-- scene:addChild(layer)
+-- layer:addChild(label)
+
+-- CCDirector:sharedDirector():runWithScene(scene)
+
