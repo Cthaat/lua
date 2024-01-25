@@ -157,3 +157,6 @@
 
 -- CCDirector:sharedDirector():runWithScene(scene)
 
+print("hello");
+local a = 10;
+print (a);
